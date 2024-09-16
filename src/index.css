@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes fadin {
+  0% {
+    opacity: 0;
+    /* -webkit-transform: scale(1) translate3d(0, 30px, 0); */
+    transform: scale(1) translate3d(-50%, 30px, 0);
+    /* transform: translate(50%, 30px); */
+  }
+
+  100% {
+    opacity: 1;
+    /* -webkit-transform: scale(1) translate3d(0, 0, 0); */
+    transform: scale(1) translate3d(-50%, 0, 0);
+    /* transform: translate(0px, 0px); */
+  }
+}
+@layer base {
+  .item {
+    animation: fadin 0.3s forwards;
+  }
+  .logo {
+    font-family: "Bungee Tint", sans-serif;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+  }
+}
