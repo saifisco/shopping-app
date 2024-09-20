@@ -13,7 +13,7 @@ export default function Navbar({ show, setShow }) {
     <div
       className={` ${
         !show ? "hidden lg:block" : "block"
-      }  lg:translate-x-0 transition-transform w-lvw h-full fixed lg:static inset-0 flex flex-col p-3 lg:p-0 bg-white overflow-auto`}
+      }  lg:translate-x-0 transition-transform w-lvw lg:w-auto h-full fixed lg:static inset-0 flex flex-col p-3 lg:p-0 bg-white`}
     >
       <div className="ml-auto  lg:hidden border border-transparent hover:border-slate-300">
         <button

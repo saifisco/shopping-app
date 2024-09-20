@@ -24,7 +24,7 @@ export default function Slider({ images }) {
   };
 
   return (
-    <div className="relative w-full m-auto overflow-hidden">
+    <div className="relative lg:w-[80%] m-auto overflow-hidden">
       <div
         className=" flex"
         style={{
@@ -41,7 +41,7 @@ export default function Slider({ images }) {
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="w-full rounded-[10px]"
+              className="ww-full rounded-[10px]"
             />
           </div>
         ))}
@@ -61,12 +61,3 @@ export default function Slider({ images }) {
     </div>
   );
 }
-`<div className="min-w-full h-full absolute -translate-x-full bg-[red]">
-            2
-          </div>
-          <div className="min-w-full h-full absolute -translate-x-full bg-[blue]">
-            3
-          </div>
-          <div className="min-w-full h-full absolute -translate-x-full bg-[black]">
-            4
-          </div>`;

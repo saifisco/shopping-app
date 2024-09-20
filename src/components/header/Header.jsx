@@ -25,8 +25,11 @@ export default function Header() {
       <div className="mr-5">
         <Navbar show={show} setShow={setShow} />
       </div>
-      <div className="md:border  flex items-center justify-center md:text-lg cursor-pointer ">
-        <button className="hover:bg-green-400 flex justify-center items-center p-1 rounded-full">
+      <div
+        className="md:border lg:hover:rounded-full  flex items-center justify-center md:text-lg cursor-pointer lg:transition"
+        style={{ transition: "all .2s ease" }}
+      >
+        <button className="hover:bg-green-400 lg:hover:bg-inherit flex justify-center items-center p-1 rounded-full">
           <span className="hidden md:block mx-1 md:mx-2">Search</span>
           <CiSearch size={25} />
         </button>
