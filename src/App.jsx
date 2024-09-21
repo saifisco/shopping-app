@@ -26,16 +26,20 @@ import pic2 from "/Banners/pic2.jpg";
 import pic3 from "/Banners/pic3.jpg";
 import pic4 from "/Banners/pic4.jpg";
 import { Footer } from "./components/Footer.jsx";
+import { RightSideBar } from "./components/RightSideBar.jsx";
 const images = [pic1, pic2, pic3, pic4];
 const App = () => {
   return (
     <>
-      <div>
+      <div className="relative">
         <Header />
+
         <div className="p-4">
           <Slider images={images} />
           <div className="mt-4">
-            <h1 className="mb-2 font-semibold capitalize">New arrivals</h1>
+            <h1 className="mb-2 font-semibold capitalize lg:text-xl">
+              New arrivals
+            </h1>
             <div className="overflow-x-scroll flex gap-4">
               {Array(5)
                 .fill(0)
@@ -45,9 +49,11 @@ const App = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h1 className="mb-2 font-semibold capitalize">Best sells</h1>
+            <h1 className="mb-2 font-semibold capitalize lg:text-xl">
+              Best sells
+            </h1>
             <div className="overflow-x-scroll flex gap-4">
-              {Array(5)
+              {Array(10)
                 .fill(0)
                 .map((_, i) => (
                   <Card key={i} />
@@ -55,7 +61,9 @@ const App = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h1 className="mb-2 font-semibold capitalize">real madrid</h1>
+            <h1 className="mb-2 font-semibold capitalize lg:text-xl">
+              real madrid
+            </h1>
             <div className="overflow-x-scroll flex gap-4">
               {Array(5)
                 .fill(0)
